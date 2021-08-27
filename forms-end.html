@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>My Introduction</title>
+	<link href="css/forms-end.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>Hyy dear! Give your introduction.</h1>
+			<p>Fill out the form below to give your introduction.</p>
+			<form method="POST" action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES">
+				<fieldset>
+					<legend>Your contact information</legend>
+					<label for="name">Your name </label>
+					<input type="text" id="name" name="name" autofocus>
+					<label for="name">Your father's name </label>
+					<input type="text" id="name" name="name" autofocus>
+					<label for="phone">Phone number</label>
+					<input type="tel" id="phone" name="phone" placeholder="Don't forget the area code!">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email">
+
+				</fieldset>
+				<fieldset>
+					<legend>About your Knowledge/skills :- </legend>
+					<label for="date">started date</label>
+					<input type="date" id="date" name="date">
+					<label for="qty">How many skills would you have?</label>
+					<input type="number" id="qty" name="qty" min="1" max="10">
+
+					<p>What type of skills do you prefer?</p>
+					<label>
+						<input type="radio" name="ufotype" value="classic" checked> HTML
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="starwars"> CSS
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="galactica"> Javascript
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="startrek"> Backend devloper
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="any"> Frontend devloper
+					</label>
+
+					<label for="abtype">What type of experience do you want?</label>
+					<select id="abtype" name="abtype">
+						<option selected>Select one...</option>
+						<option value="tour">Progrmmer</option>
+						<option value="dinner">Web devloper</option>
+						<option value="dance">Coder/App devloper </option>
+						<option value="whales">Game devloper</option>
+					</select>
+
+					<label for="comments">Special Abot you:-:</label>
+					<textarea id="comments" name="comments"></textarea>
+
+					<label>
+						<input id="subscribe" name="subscribe" type="checkbox" value="subscribe">Add me to your email list
+					</label>
+					<input id="send_to" type="hidden" name="send_to" value="kumarparduman80@gmail.com">
+					<button type="submit">Submit</button>
+				</fieldset>
+			</form>
+
+		</section>
+		<aside>
+			<h3>Our Location</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14398.745698355777!2d86.15715342252756!3d25.548820149344778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f206cf028be1df%3A0x60cdb0211b29825a!2sPahsara%20West%2C%20Bihar!5e0!3m2!1sen!2sin!4v1627893963109!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"
+			 
+			<address>
+				My Birth place <br>
+				Pahsara, ward.no.4 <br>
+				Begusarai <br>
+				Bihar, pincode: 851127
+			</address>
+		</aside>
+	</div>
+	<script src="js/forms.js"></script>
+</body>
+
+</html>
